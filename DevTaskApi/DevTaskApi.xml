@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevTaskApi</name>
+    </assembly>
+    <members>
+        <member name="T:DevTaskApi.Controllers.ProjectsController">
+            <summary>
+            API for all software projects
+            </summary>
+        </member>
+        <member name="M:DevTaskApi.Controllers.ProjectsController.GetProjects">
+            <summary>
+            Gets all projects
+            </summary>
+            <returns>IEnumerable</returns>
+        </member>
+        <member name="M:DevTaskApi.Controllers.ProjectsController.GetProject(System.Int32)">
+            <summary>
+            Gets project associated with passed Project Id
+            </summary>
+            <param name="id">Required</param>
+            <returns>Procect Object</returns>
+        </member>
+        <member name="T:DevTaskApi.DAL.DevTaskContext">
+            <summary>
+            Data access layer
+            </summary>
+        </member>
+        <member name="M:DevTaskApi.DAL.DevTaskContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{DevTaskApi.DAL.DevTaskContext})">
+            <summary>
+            Main Constructor
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="M:DevTaskApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            This method gets called by the runtime. Use this method to add services to the container.
+        </member>
+        <member name="M:DevTaskApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        </member>
+    </members>
+</doc>
